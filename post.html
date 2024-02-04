@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Office</title>
+    <link rel="stylesheet" href="post.css" />
+   <script src="https://kit.fontawesome.com/3654af221d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="details">
+      <h3>IP Address: <span id="ip"></span></h3>
+      <div class="details-container">
+        <div>
+          <h3>Lat: <span id="lat"></span></h3>
+          <h3>Long: <span id="long"></span></h3>
+        </div>
+        <div>
+          <h3>City: <span id="city"></span></h3>
+          <h3>Region: <span id="region"></span></h3>
+        </div>
+        <div>
+          <h3>Organisation:<span id="org"></span></h3>
+          <h3>Hostname:<span id="host"></span></h3>
+        </div>
+      </div>
+    </section>
+<section class="map">
+<h2>Your current location</h2>
+ <div class="map-img">
+                <!-- <img src="./Images/map.png" alt=""> -->
+                <iframe
+                    src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed"
+                    height="100%"
+                    width="100%"
+                    frameborder="0"
+                    style="border:0"
+                ></iframe>
+
+</section>
+<section class="moreInfo">
+<h2>More information About You</h2>
+
+<div class="timezone-detail">
+<h3>timezone: <span id="timezone"></span></h3>
+<h3>Date and Time: <span id="date"></span></h3>
+<h3>PinCode: <span id="pin"></span></h3>
+<h3>Message: Number of pincode(s) found:  <span id="message"></span></h3>
+</div>
+
+</section>
+
+<section class="po-near-you">
+           <h1>Post Offices Near You</h1>
+            <div class="po-near-content">
+                <div class="search-bar">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- <img src="search-512.webp" alt=""> -->
+                    <input type="search" class="search-input" placeholder="Search By Name & Branch Office Type">
+                </div>
+                <div class="po-grid">
+                    <div class="po-box">
+                        <p class="name"><b>Name : </b><span></span></p>
+                        <p class="branch-name"><b>Branch Type : </b><span></span></p>
+                        <p class="delivery-status"><b>Delivery Status : </b><span></span></p>
+                        <p class="district"><b>District : </b><span></span></p>
+                        <p class="division"><b>Division : </b><span></span></p>
+                    </div>
+                </div>
+            </div>
+
+</section>
+
+    <script src="post.js"></script>
+  </body>
+</html>
